@@ -107,7 +107,6 @@ const Navbar = () => {
             <a className="relative flex items-center py-2 px-2 text-[19px] font-semibold text-white transition-colors duration-300" href="" onClick={handleLinkClick}>
               <RxResume className="mr-2" /> Resume
             </a>
-
             <a className="relative flex items-center py-2 px-2 text-[19px] font-semibold text-white transition-colors duration-300" href="https://github.com/Mohammadasad098" onClick={handleLinkClick}>
               <FaGithub className="mr-2" /> Github
             </a>
