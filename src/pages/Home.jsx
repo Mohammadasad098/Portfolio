@@ -4,19 +4,17 @@ import { TypeAnimation } from 'react-type-animation'
 const Home = () => {
   return (
     <>
-    <div className='bg-[#3189ac] flex justify-center gap-72 items-center py-60 flex-wrap'>
+    <div className='bg-[#3189ac] flex justify-center gap-72 items-center py-48 flex-wrap'>
     <div>
-      <p className='text-4xl'>Hi There! 👋🏻</p><br />
-      <p className='text-4xl'> I'M MUHAMMAD ASAD</p><br />
+      <p className='text-4xl font-medium'>Hi There! 👋🏻</p><br />
+      <p className='text-4xl font-medium'> I'M MUHAMMAD ASAD</p><br />
       <br />
       <TypeAnimation
+      className='font-medium'
       sequence={[
-        // Same substring at the start will only be typed out once, initially
-        'MERN Stack Developer',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        'Deep Learning Engineer',
+        'Front End Developer',
         1000,
-        'Mobile Application Developer',
+        'Deep Learning Engineer',
         1000,
       ]}
       wrapper="span"
@@ -26,9 +24,40 @@ const Home = () => {
     />
     </div>
     <div>
-<img width={100} src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg" alt="" />
+<img width={400} src="/images/home.webp" alt="" />
     </div>
     </div>
+
+
+
+
+
+    <div className='bg-[#3189ac] flex justify-center items-center gap-8 px-20'>
+    <div>
+      <h1 className='text-5xl font-semibold ml-8'>LET ME INTRODUCE MYSELF</h1>
+<p className='text-[19px] mt-8 font-medium'>
+I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
+<br /><br />
+
+I am fluent in classics like Javascript, ReactJs and React Native. <br /><br />
+
+My field of Interest's are building new  Web Technologies and Products and also in areas related to Deep Learning and Natural Launguage Processing.
+<br /><br />
+Whenever possible, I also apply my passion for developing products with Modern Javascript Library and Frameworks  like React.js
+
+</p>
+</div>
+<div>
+  <img width={250} src="/images/avatar.png" alt="" />
+</div>
+    </div>
+
+
+    <div className='text-center pt-20 bg-[#3189ac]'>
+      <h1 className='text-4xl font-semibold'>FIND ME ON</h1>
+      <p>Feel free to connect with me</p>
+    </div>
+    
     </>
   )
 }

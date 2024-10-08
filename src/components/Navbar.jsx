@@ -24,11 +24,6 @@ const Navbar = () => {
     closeMenu();
   };
 
-  const handleCloseClick = (event) => {
-    event.stopPropagation();
-    closeMenu();
-  };
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
@@ -44,7 +39,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="relative shadow bg-blue-950 top-0 z-30">
+    <nav className="fixed top-0 left-0 w-full z-30 bg-blue-950">
       <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <Link to={''} className="text-6xl font-bold text-[#3189ac]">Asad...</Link>
@@ -84,30 +79,65 @@ const Navbar = () => {
           }`}
         >
           <div className="flex flex-col items-center md:flex-row md:mx-6 space-y-4 md:space-y-0 md:space-x-4">
-            <Link className="relative flex items-center py-2 px-2 text-[19px] font-semibold text-white transition-colors duration-300" to={''} onClick={handleLinkClick}>
+            <Link 
+              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
+              to={''} 
+              onClick={handleLinkClick}
+            >
               <TiHomeOutline className="mr-2" /> Home
             </Link>
 
-            <Link className="relative flex items-center py-2 px-2 text-[19px] font-semibold text-white transition-colors duration-300" to={'about'} onClick={handleLinkClick}>
+            <Link 
+              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
+              to={'about'} 
+              onClick={handleLinkClick}
+            >
               <LuUser2 className="mr-2" /> About
             </Link>
 
-            <Link className="relative flex items-center py-2 px-2 text-[19px] font-semibold text-white transition-colors duration-300" to={'projects'} onClick={handleLinkClick}>
+            <Link 
+              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
+              to={'projects'} 
+              onClick={handleLinkClick}
+            >
               <AiOutlineFundProjectionScreen className="mr-2" /> Projects
             </Link>
 
-            <Link className="relative flex items-center py-2 px-2 text-[19px] font-semibold text-white transition-colors duration-300" to={'experience'} onClick={handleLinkClick}>
+            <Link 
+              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
+              to={'experience'} 
+              onClick={handleLinkClick}
+            >
               <PiNotebookLight className="mr-2" /> Experience
             </Link>
 
-            <Link className="relative flex items-center py-2 px-2 text-[19px] font-semibold text-white transition-colors duration-300" to={'contact'} onClick={handleLinkClick}>
+            <Link 
+              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
+              to={'contact'} 
+              onClick={handleLinkClick}
+            >
               <MdOutlineContactless className="mr-2" /> Contact
             </Link>
 
-            <a className="relative flex items-center py-2 px-2 text-[19px] font-semibold text-white transition-colors duration-300" href="" onClick={handleLinkClick}>
+            <a 
+              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
+              href="" 
+              onClick={handleLinkClick}
+            >
               <RxResume className="mr-2" /> Resume
             </a>
-            <a className="relative flex items-center py-2 px-2 text-[19px] font-semibold text-white transition-colors duration-300" href="https://github.com/Mohammadasad098" onClick={handleLinkClick}>
+            <a 
+              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
+              href="https://github.com/Mohammadasad098" 
+              onClick={handleLinkClick}
+            >
               <FaGithub className="mr-2" /> Github
             </a>
           </div>
