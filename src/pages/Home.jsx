@@ -73,11 +73,11 @@ const Home = () => {
       <p className='text-2xl font-[2px] mt-3'>Feel free to connect with me</p>
     </div>
     <div className="flex justify-center gap-3 text-5xl mt-5 pb-10">
-  <FaGithub className="border p-3 bg-white rounded-full" />
+ <a href="https://github.com/Mohammadasad098/"> <FaGithub className="border p-3 bg-white rounded-full" /></a>
   <FaTwitter className="border p-3 bg-white rounded-full" />
-  <FaLinkedin className="border p-3 bg-white rounded-full" />
-  <PiInstagramLogoFill className="border p-3 bg-white rounded-full" />
-  <MdEmail className="border p-3 bg-white rounded-full" />
+  <a href="https://www.linkedin.com/in/asad-ullah-b2a2572a9/"><FaLinkedin className="border p-3 bg-white rounded-full" /></a>
+  <a href="https://instagram.com/m.asad._.07/"><PiInstagramLogoFill className="border p-3 bg-white rounded-full" /></a>
+  <a href="https://mail.google.com/mail/u/0/#sent"><MdEmail className="border p-3 bg-white rounded-full" /></a>
 </div>
 
 
