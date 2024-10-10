@@ -80,7 +80,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col items-center md:flex-row md:mx-6 space-y-4 md:space-y-0 md:space-x-4">
             <Link 
-              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
               to={''} 
               onClick={handleLinkClick}
@@ -89,7 +89,7 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
               to={'about'} 
               onClick={handleLinkClick}
@@ -98,7 +98,7 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
               to={'projects'} 
               onClick={handleLinkClick}
@@ -107,7 +107,7 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
               to={'experience'} 
               onClick={handleLinkClick}
@@ -116,7 +116,7 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
+              className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
               to={'contact'} 
               onClick={handleLinkClick}
@@ -124,22 +124,23 @@ const Navbar = () => {
               <MdOutlineContactless className="mr-2" /> Contact
             </Link>
 
-            <a 
-              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
-              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
+          
+           <a 
+              className="relative bg-[#3189ac] mx-96  text-white px-3 rounded-lg transition-all transform hover:scale-105 flex items-center py-2 p text-[22px] font-semibold   " 
               href="" 
               onClick={handleLinkClick}
+                download="/images/project1.png"
             >
               <RxResume className="mr-2" /> Resume
             </a>
             <a 
-              className="relative flex items-center py-2 px-2 text-2xl font-semibold text-white transition-colors duration-300 
-              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
+              className="relative bg-[#3189ac] mx-96  text-white px-3 rounded-lg transition-all transform hover:scale-105 flex items-center py-2 p text-[22px] font-semibold" 
               href="https://github.com/Mohammadasad098" 
               onClick={handleLinkClick}
             >
               <FaGithub className="mr-2" /> Github
             </a>
+            
           </div>
         </div>
       </div>

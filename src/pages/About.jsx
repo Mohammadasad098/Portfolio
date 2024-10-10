@@ -6,6 +6,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
 
 const About = () => {
   return (
@@ -62,6 +63,9 @@ const About = () => {
     </div>
     <div className='border-2 border-blue-950 py-5 px-8 rounded-md w-[calc(50%-8px)] md:w-[calc(25%-16px)] flex justify-center items-center'>
       <FaReact className='text-8xl text-white'/>
+    </div>
+    <div className='border-2 border-blue-950 py-5 px-8 rounded-md w-[calc(50%-8px)] md:w-[calc(25%-16px)] flex justify-center items-center'>
+      <RiNextjsFill className='text-8xl text-white'/>
     </div>
   </div>
 </div>
