@@ -127,9 +127,9 @@ const Navbar = () => {
           
            <a 
               className="relative bg-[#3189ac] mx-96  text-white px-3 rounded-lg transition-all transform hover:scale-105 flex items-center py-2 p text-[22px] font-semibold   " 
-              href="" 
+              href="/images/resume.pdf" 
               onClick={handleLinkClick}
-                download="/images/project1.png"
+    download
             >
               <RxResume className="mr-2" /> Resume
             </a>
