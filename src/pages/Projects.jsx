@@ -6,7 +6,7 @@ const Projects = () => {
     <>
     <div className='bg-[#3189ac] py-40 text-white'>
 
-      <p className='text-center'> <span className='font-semibold text-6xl'>My Recent <span className='text-blue-950'>Works</span></span> <br /> <br /> <span className='text-3xl'>Here are a few projects I've worked on recently</span></p>
+      <p className='text-center'> <span className='font-semibold text-6xl'>My Recent <span className='text-blue-950'>Works</span></span> <br /> <br /> <span className='text-3xl mx-2'>Here are a few projects I've worked on recently</span></p>
   
 <div className='flex justify-center flex-wrap gap-5 my-9 md:mx-3'>
   <Card src="/images/project1.png" heading="Blogging App" description="I developed a blogging application using React and Firebase that allows users to create, read blog posts seamlessly. The app features an intuitive user interface, enabling users to easily navigate through various blog entries and interact with content." button1="Github" button2="View Live Demo"   link1="https://github.com/Mohammadasad098/React-Blogging-App"button
