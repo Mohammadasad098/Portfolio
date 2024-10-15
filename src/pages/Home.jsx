@@ -13,12 +13,12 @@ const Home = () => {
     <>
     <div className='bg-[#3189ac] pt-32'>
 
-    <div className="flex justify-evenly items-center py-20 flex-wrap">
-  <div className="text-center md:text-left mb-10 md:mb-0">
+    <div className="flex flex-col md:flex-row justify-evenly items-center py-20 flex-wrap">
+  <div className="text-center md:text-left mb-10 md:pb-10">
     <p className="text-5xl text-white font-medium">Hi There! 👋🏻</p><br />
     <p className="text-5xl text-white font-medium">I'M <span className='text-blue-950'>MUHAMMAD ASAD</span></p><br /><br />
     <TypeAnimation
-      className="font-medium text-blue-950"
+      className="font-medium text-blue-950 text-4xl md:text-5xl"
       sequence={[
         'Front End Developer',
         1000,
@@ -27,18 +27,19 @@ const Home = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '3em', display: 'inline-block' }}
+      style={{ display: 'inline-block' }}
       repeat={Infinity}
     />
   </div>
-  <div>
+  <div className='mt-10 md:mt-0'> 
   <img 
-  width={400}
-      className="md:w-250" 
-      src="/images/home.webp" 
-      alt="Muhammad Asad" 
-    />
-  </div>
+    className="w-80 md:w-[400px] mx-2"
+    src="/images/home.webp" 
+    alt="Muhammad Asad" 
+  />
+</div>
+
+
 </div>
 
 

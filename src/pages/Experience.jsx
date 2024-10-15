@@ -7,7 +7,7 @@ const Experience = () => {
         <div className='mb-8 md:mb-0'> {/* Increased margin-bottom for more gap */}
           <p className='text-white text-center font-semibold text-4xl'>I am studying web development at SMIT.</p>
         </div>
-        <div>
+        <div className='mt-10 md:mt-0'>
           <img 
             width={300} // Reduced image width for mobile screens
             src="/images/experience.webp" 

@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-30 bg-blue-950">
-      <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+      <div className="container px-6 py-3 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <Link to={''} className="text-6xl font-bold text-[#3189ac]">Asad...</Link>
           {/* Mobile menu button */}
