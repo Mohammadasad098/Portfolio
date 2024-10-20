@@ -11,7 +11,7 @@ import { RiNextjsFill } from "react-icons/ri";
 const About = () => {
   return (
     <>
-    <div className='bg-[#3189ac] py-32'>
+    <div className='bg-[#3189ac] py-28'>
 
 
 
@@ -26,7 +26,7 @@ const About = () => {
     </p>
   </div>
   
-  <div>
+  <div className='mt-12 md:mt-0'>
     <img 
       className="w-96 md:w-96" 
       src="https://media-public.canva.com/9Zna4/MAFjWH9Zna4/1/tl.png" 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <div className='bg-[#3189ac] py-[280px]'>
+    <div className='bg-[#3189ac] py-[255px] md:py-[222px]'>
       <div className='flex flex-col md:flex-row justify-center items-center flex-wrap md:justify-evenly'>
         <div className='mb-8 md:mb-0'> {/* Increased margin-bottom for more gap */}
           <p className='text-white text-center font-semibold text-4xl'>I am studying web development at SMIT.</p>

@@ -26,7 +26,7 @@ const sendDataInFirebase = async (data) => {
 
 
   return (
-    <div className='bg-[#3189ac] py-[220px]'>
+    <div className='bg-[#3189ac] py-[190px] md:py-[150px]'>
       <p className='text-center mb-8 text-white'><span className='text-5xl font-semibold'>GET IN TOUCH</span> <br />
       <span className='text-[19px] text-white'>I would like to know the final requirements of your project. Please get in touch with me and share details about your project.</span></p>
       <div >
