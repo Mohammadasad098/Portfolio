@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import { IoLogoHtml5 } from "react-icons/io5";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -7,8 +7,33 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
+import { FaArrowUp } from "react-icons/fa";
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Scroll to top smoothly
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
   return (
     <>
     <div className='bg-[#3189ac] py-28'>
@@ -70,7 +95,16 @@ const About = () => {
   </div>
 </div>
 
-
+<div>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-4 right-8 bg-blue-950 font-bold text-white text-2xl px-4 py-3 rounded-md shadow-lg"
+        > 
+          <FaArrowUp />
+        </button>
+      )}
+    </div>
     </div>
     </>
   )

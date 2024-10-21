@@ -1,14 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { TypeAnimation } from 'react-type-animation'
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
+import { FaArrowUp } from "react-icons/fa";
 import 'animate.css';
 
 
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Scroll to top smoothly
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
   return (
     <>
     <div className='bg-[#3189ac] pt-28'>
@@ -81,6 +107,17 @@ const Home = () => {
   <a className='transition-transform duration-300 ease-in-out hover:scale-105' href="https://instagram.com/m.asad._.07/"><PiInstagramLogoFill className="border p-3 bg-white rounded-full" /></a>
   <a className='transition-transform duration-300 ease-in-out hover:scale-105' href="https://mail.google.com/mail/u/0/#sent"><MdEmail className="border p-3 bg-white rounded-full" /></a>
 </div>
+
+<div>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-4 right-8 bg-blue-950 font-bold text-white text-2xl px-4 py-3 rounded-md shadow-lg"
+        > 
+          <FaArrowUp />
+        </button>
+      )}
+    </div>
 
 
     </div>
