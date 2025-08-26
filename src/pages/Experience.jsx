@@ -22,16 +22,15 @@ const Experience = () => {
   return (
     <div className="min-h-screen bg-[#3189ac] flex flex-col justify-center items-center px-6 relative">
       {/* Content Section */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-12">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-28">
         {/* Text */}
         <div className="text-center md:text-left max-w-xl">
           <p className="text-white font-semibold text-xl md:text-2xl leading-snug">
             I am currently working as a{" "}
-            <span className="text-blue-900">Frontend Development Intern</span>
-            {" "}at <span className="text-blue-900">Trust Nexus</span>,
+            <span className="text-blue-950">Frontend Development Intern</span>
+            {" "}at <span className="text-blue-950">Trust Nexus</span>,
             contributing to their website projects and gaining valuable hands-on experience.
           </p>
-
         </div>
 
         {/* Image */}
@@ -43,6 +42,8 @@ const Experience = () => {
           />
         </div>
       </div>
+
+
 
       {/* Scroll to Top Button */}
       {isVisible && (

@@ -74,73 +74,72 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           ref={navbarRef}
-          className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out md:text-white md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center bg-blue-950 ${
-            isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
-          }`}
+          className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out md:text-white md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center bg-blue-950 ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
+            }`}
         >
           <div className="flex flex-col items-center md:flex-row md:mx-6 space-y-4 md:space-y-0 md:space-x-4">
-            <Link 
+            <Link
               className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
-              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
-              to={''} 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full"
+              to={''}
               onClick={handleLinkClick}
             >
               <TiHomeOutline className="mr-2" /> Home
             </Link>
 
-            <Link 
+            <Link
               className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
-              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
-              to={'about'} 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full"
+              to={'about'}
               onClick={handleLinkClick}
             >
               <LuUser2 className="mr-2" /> About
             </Link>
 
-            <Link 
+            <Link
               className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
-              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
-              to={'projects'} 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full"
+              to={'projects'}
               onClick={handleLinkClick}
             >
               <AiOutlineFundProjectionScreen className="mr-2" /> Projects
             </Link>
 
-            <Link 
+            <Link
               className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
-              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
-              to={'experience'} 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full"
+              to={'experience'}
               onClick={handleLinkClick}
             >
               <PiNotebookLight className="mr-2" /> Experience
             </Link>
 
-            <Link 
+            <Link
               className="relative flex items-center py-2 px-2 text-[22px] font-semibold text-white transition-colors duration-300 
-              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full" 
-              to={'contact'} 
+              after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[6px] after:bg-[#3189ac] after:transition-all after:duration-300 hover:after:w-full"
+              to={'contact'}
               onClick={handleLinkClick}
             >
               <MdOutlineContactless className="mr-2" /> Contact
             </Link>
 
-          
-           <a 
-              className="relative bg-[#3189ac] mx-96  text-white px-3 rounded-lg transition-all transform hover:scale-105 flex items-center py-2 p text-[22px] font-semibold   " 
-              href="/images/Muhammad_Asad_Resume.pdf" 
+
+            <a
+              className="relative bg-[#3189ac] mx-96  text-white px-3 rounded-lg transition-all transform hover:scale-105 flex items-center py-2 p text-[22px] font-semibold   "
+              href="/images/Muhammad_Asad_Resume.pdf"
               onClick={handleLinkClick}
-    download
+              download
             >
               <RxResume className="mr-2" /> Resume
             </a>
-            <a 
-              className="relative bg-[#3189ac] mx-96  text-white px-3 rounded-lg transition-all transform hover:scale-105 flex items-center py-2 p text-[22px] font-semibold" 
-              href="https://github.com/Mohammadasad098" 
+            <a
+              className="relative bg-[#3189ac] mx-96  text-white px-3 rounded-lg transition-all transform hover:scale-105 flex items-center py-2 p text-[22px] font-semibold"
+              href="https://github.com/Mohammadasad098"
               onClick={handleLinkClick}
             >
               <FaGithub className="mr-2" /> Github
             </a>
-            
+
           </div>
         </div>
       </div>
